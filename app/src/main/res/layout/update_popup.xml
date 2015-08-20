@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/lighter_gray"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/lyt_bod">
+        <TextView
+            android:id="@+id/txt_popup_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Product"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Cost Price: "/>
+            <TextView
+                android:id="@+id/txt_popup_cost_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="44.00"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/txt_popup_sale_price_lbl"
+                android:text="Selling Price: "/>
+
+            <EditText
+                android:id="@+id/edt_sale_price"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/txt_popup_sale_price_lbl"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="55.00"
+                android:inputType="numberDecimal"
+                />
+        </LinearLayout>
+
+
+        <CheckBox
+            android:id="@+id/chk_available"
+            android:textSize="20sp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available"
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="10dp">
+
+
+        <Button
+            android:id="@+id/save"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            />
+
+    </LinearLayout>
+</LinearLayout>

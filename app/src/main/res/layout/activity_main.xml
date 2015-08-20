@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity"
+    android:background="@color/iaa_white">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lyt_header"
+        android:orientation="vertical">
+        <Spinner
+            android:id="@+id/ddl_items"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:padding="10dp"
+            >
+
+            </Spinner>
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/grd_products"
+            android:stretchMode="columnWidth"
+            android:numColumns="2"
+
+            android:columnWidth="300dp"
+            >
+
+        </GridView>
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save_file"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Save File"
+        android:textColor="@color/iaa_white"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
